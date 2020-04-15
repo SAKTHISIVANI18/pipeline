@@ -4,16 +4,16 @@ pipeline {
    stages {
       stage('build') {
          steps {
-            sh "build"
+            sh 'cp /var/lib/jenkins/workspace/sakthipipeline/target/home/dineshreddy99077/che/apache-tomcat-7.0.103/webapps'
          }
       }
-       stages {
+       
       stage('test') {
          steps {
             sh "test"
          }
       }
-       stages {
+       
       stage('deploy') {
          steps {
             sh "deploy"
