@@ -1,4 +1,4 @@
-class Add{
+class add{
    public static void main(String[] args) {
         
       int num1 = 5, num2 = 15, sum;
