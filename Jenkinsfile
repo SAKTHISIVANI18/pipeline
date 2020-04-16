@@ -2,21 +2,11 @@ pipeline {
    agent any
    
    stages {
-      stage('build') {
+      stage('compile') {
          steps {
-            echo "build"
-         }
-      }
-       
-      stage('test') {
-         steps {
-            echo "test"
-         }
-      }
-       
-      stage('deploy') {
-         steps {
-            echo "deploy"
+            sh 'cd /var/lib/jenkins/workspace/sakthipipeline'
+            sh 'javac add.java'
+            sh 'java add'
          }
       }
       
